@@ -27,13 +27,14 @@ public:
             p = p->next;
             num = num + 1;
         }
-         cout<<p->val<<endl;
-        if (p == NULL) return head;
+
+        if (p == NULL) return head;// Not neccessary at all!
+        
         c = p->next;
         if(c) next = c->next;
         int number_of_iterations = n - m;
         
-        ListNode *dummy1=p, *dummy2=NULL;
+        ListNode *dummy1=p;
         int ith = 0;
         while (ith < number_of_iterations){
             cout<<p->val<<endl;
@@ -46,11 +47,13 @@ public:
             
         }
         
+        // link the first partion to the second partion. If there is no first partion, update head only
         if(fromStartingPt)
             fromStartingPt->next = p;
         else head = p;
+        
+        // link the second partion to the last partion
         dummy1->next = c;
-        //if(c) c->next = NULL;
         return head;
        
     }
