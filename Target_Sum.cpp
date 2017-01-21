@@ -1,8 +1,17 @@
 /*
-You are given a list of non-negative integers, a1, a2, ..., an, and a target, S. Now you have 2 symbols + and -. For each integer, you should choose one from + and - as its new symbol.
+You are given a list of non-negative integers, a1, a2, ..., an, and a target, S. Now you have 2 symbols + and -. 
+For each integer, you should choose one from + and - as its new symbol.
 Find out how many ways to assign symbols to make sum of integers equal to target S.
-*/
-/*
+Note:
+    -The length of the given array is positive and will not exceed 20.
+    -The sum of elements in the given array will not exceed 1000.
+    -Your output answer is guaranteed to be fitted in a 32-bit integer.
+
+Solution: Dynamic programming
+Denote F[i,m] is the number of +/- assigments for the first i elements in the array so that the 
+sum + f(a1,a2,...,ai) = sum +S
+where f(.) is a linear combination of a1,a2,...ai for each +/- assignment
+F[i,m] = F[i-1,m-a[i]] + F[i-1,m+a[i]];
 
 */
 
