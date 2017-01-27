@@ -55,3 +55,13 @@ Assume                                                                          
 This implies                                                                                      Ta suy ra
 
 We obtain                                                                                          Ta thu được (từ kết quả trê
+
+WLOG                                         Without loss of generality                                          Không mất tính tổng quát
+
+Q.E.D                                                                                                                                        Điều phải chứng minh
+
+LHS                                             Left hand side                                                                  Vế trái
+
+RHS                                             Right hand side                                                              Vế phải
+
+i.e.                                                                                                                                            nghĩa là
