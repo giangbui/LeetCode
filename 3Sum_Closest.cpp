@@ -2,8 +2,9 @@
 //Return the sum of the three integers. You may assume that each input would have exactly one solution.
 
 /*Solution
-The first step, we sort the array. Keep the first one and the last one, we do binary search the second one so that the sum of three is closet
-//to the target.
+The first step, we sort the array. We iterate the index of  the smallest one, i, from 0 to size of array - 2. The index of the second
+number starts at i + 1 and the last one start at the end of the array. At every step, we update the closest distance of 3sum and the targe.
+Base on the sign of the distance, we decide to update the index of the second and the third numbers
 */
 
 class Solution {
