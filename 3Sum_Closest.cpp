@@ -2,9 +2,7 @@
 //Return the sum of the three integers. You may assume that each input would have exactly one solution.
 
 /*Solution
-The first step, we sort the array. We iterate the index of  the smallest one, i, from 0 to size of array - 2. The index of the second
-number starts at i + 1 and the last one start at the end of the array. At every step, we update the closest distance of 3sum and the targe.
-Base on the sign of the distance, we decide to update the index of the second and the third numbers
+The first step, we sort the array to reduce the search space. We can assume that the three elements we are looking for has the increasing order. We allow the first element loop through the array from the 0-index position, we are looking for the two remain elements whose sum is equal to complement of the first element. To find those two elements, we start from the both sides of the sub-array, we check how far of the two sum to the target complement and update the result if it is, so far, the smallest. 
 */
 
 class Solution {
