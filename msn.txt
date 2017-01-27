@@ -1,0 +1,57 @@
+Conversely, if.. then                                                                         Đảo lại, nếu .. thì
+
+Indeed                                                                                                   Thực vậy
+
+By the same argument we get                                                      Với cùng lập luận, ta có
+
+Put                                                                                                         Đặt
+
+Let.. be                                                                                                Đặt.. là
+
+We denote                                                                                          Ta kí hiệu
+
+Hence                                                                                                  (từ ngay kết quả trên) ta có
+
+Since                                                                                                     Do
+
+But                                                                                                         Nhưng
+
+Clearly, from.. we get                                                                    Rõ ràng, từ .. ta có
+
+Moreover                                                                                           Hơn nữa
+
+Similarly, we can prove that                                                      Tương tự, ta có thể chứng minh
+
+Therefore                                                                                           Do đó (kết thúc một ý chứng minh)
+
+It follows                                                                                            Suy ra
+
+Choose x=2 so that                                                       Chọn x=2 thì
+
+Conclusion                                                                                        Kết luân
+
+Thus                                                                                                     Như vậy
+
+We decude that                                                                                Ta suy ra
+
+By the hypothesis                                                                           Từ giả thiết
+
+So                                                                                                           Nên
+
+Then                                                                                                     Thì
+
+Consider                                                                                             Xét
+
+Method 1                                                                                            Phương pháp 1
+
+Drop                                                                                                     loại bỏ
+
+Putting t=3                                                                      Đặt t=3
+
+A contradiction                                                                              Mâu thuẫn
+
+Assume                                                                                               Giả sử
+
+This implies                                                                                      Ta suy ra
+
+We obtain                                                                                          Ta thu được (từ kết quả trê
