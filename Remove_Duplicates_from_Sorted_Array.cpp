@@ -17,6 +17,28 @@ public:
        int first = 0;
        int last = 0;
        while (true){
+           while (last +1 <= nums.size() -1 && nums[last+1] == nums[first]) last++;
+           if(last > first)
+           {
+               nums.erase(nums.begin() + first,nums.begin() + last);
+           }
+           first = first +1;
+           last = first;
+           
+           if(first>=nums.size()) break;
+            
+       }
+       return nums.size();
+    }
+};
+/*
+class Solution {
+public:
+    int removeDuplicates(vector<int>& nums) {
+       if(nums.size() == 0) return nums.size();
+       int first = 0;
+       int last = 0;
+       while (true){
            while (last < nums.size() -1 && nums[last+1] == nums[first])
             last++;                   
            if(last>=nums.size())
@@ -32,3 +54,4 @@ public:
        return nums.size();
     }
 };
+*/
