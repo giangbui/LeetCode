@@ -18,10 +18,7 @@ public:
        int last = 0;
        while (true){
            while (last < nums.size() -1 && nums[last+1] == nums[first])
-            last++;
-            cout<<first<<endl;
-            cout<<last<<endl;
-        
+            last++;                   
            if(last>=nums.size())
             break;
            if(last > first)
