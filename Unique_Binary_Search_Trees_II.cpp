@@ -1,6 +1,9 @@
 //Given an integer n, generate all structurally unique BST's (binary search trees) that store values 1...n.
 //Solution: Dynamic programming
-// 
+// The basic idea is that we can construct the result of n node tree just from the result of n-1 node tree.
+//Here's how we do it: only 2 conditions: 1) The nth node is the new root, so newroot->left = oldroot;
+//the nth node is not root, we traverse the old tree, every time the node in the old tree has a right child, we can perform: old node->right = nth node, nth node ->left = right child; and when we reach the end of the tree, don't forget we can also add the nth node here.
+//One thing to notice is that every time we push a TreeNode in our result, I push the clone version of the root, and I recover what I do to the old node immediately. This is because you may use the old tree for several times.
 
 /**
  * Definition for binary tree
