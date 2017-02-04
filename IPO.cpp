@@ -9,14 +9,14 @@ To sum up, pick a list of at most k distinct projects from given projects to max
 class Solution {
 public:
     int findMaximizedCapital(int k, int W, vector<int>& Profits, vector<int>& Capital) {
-        auto cmpProfit = [](pair<int, int> & a, pair<int, int> & b) {return a.first > b.first;};
-        auto cmpCapital = [](pair<int, int> & a, pair<int, int> & b) {return a.first < b.first;};
+        auto cmpProfit = [](pair<int, int> & a, pair<int, int> & b) {return a.first < b.first;};
+        auto cmpCapital = [](pair<int, int> & a, pair<int, int> & b) {return a.first > b.first;};
         priority_queue<pair<int, int>, vector<pair<int, int>>, decltype(cmpProfit)> doable(cmpProfit);
-        priority_queue<pair<int, int>, vector<pair<int, int>>, decltype(cmpProfit)> remain(cmpProfit);
+        priority_queue<pair<int, int>, vector<pair<int, int>>, decltype(cmpCapital)> remain(cmpCapital);
         int N = Profits.size();
-        int ans = 0;
+        int ans = W;
         for (int i = 0; i < N; ++i) {
-            if (Capital[i] <= W)
+            if (Capital[i] <= ans)
                 doable.push(pair<int, int>(Profits[i], i));
             else
                 remain.push(pair<int, int>(Capital[i], i));
