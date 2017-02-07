@@ -1,5 +1,5 @@
-
-Given a binary tree, flatten it to a linked list in-place.
+//Given a binary tree, flatten it to a linked list in-place.
+//Solution: Recursively flatten the tree from the root. 
 
 class Solution {
 public:
